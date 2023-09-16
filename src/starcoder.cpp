@@ -37,7 +37,7 @@ bool starcoder_eval(
     const int n_head  = hparams.n_head;
     const int n_vocab = hparams.n_vocab;
 
-    static size_t buf_size = 512u*1024*1024;
+    static size_t buf_size = 1024u*1024*1024;
     static void * buf = malloc(buf_size);
 
     // use 2 scratch buffers
